@@ -1,0 +1,7 @@
+rm *.dump
+rm ebin/*
+git add .
+git commit -a -m "Auto-commit"
+erl -make
+erl -pa ./ebin -s main 
+
